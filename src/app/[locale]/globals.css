@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #171717;
+  --foreground: #171717;
+  --text-color: #ffffff;
+  scroll-behavior: smooth;
+}
+
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  color: white;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.irish-grover-regular {
+  font-family: "Irish Grover", system-ui;
+  /* font-weight: 400;
+  font-style: normal; */
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  padding-inline: 1px;
+  background: rgba(0, 0, 0, 0);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f5f3ea;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #dbdbdb;
+  border-radius: 100vw;
+  border: 3px solid #f5f3ea;
+}
+
+::selection {
+  background: #0284C7;
+  /* Background color of the selected text */
+  color: #ffffff;
+  /* Text color of the selected text */
+}
+
+/* For Firefox */
+::-moz-selection {
+  background: #0284C7;
+  /* Background color of the selected text */
+  color: #ffffff;
+  /* Text color of the selected text */
+}
